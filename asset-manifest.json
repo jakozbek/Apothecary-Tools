@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jakozbek/Apothecary-Tools/static/css/main.14696f0d.chunk.css",
+    "main.js": "/jakozbek/Apothecary-Tools/static/js/main.293b821b.chunk.js",
+    "main.js.map": "/jakozbek/Apothecary-Tools/static/js/main.293b821b.chunk.js.map",
+    "runtime-main.js": "/jakozbek/Apothecary-Tools/static/js/runtime-main.5f6ac27d.js",
+    "runtime-main.js.map": "/jakozbek/Apothecary-Tools/static/js/runtime-main.5f6ac27d.js.map",
+    "static/js/2.c3a2af56.chunk.js": "/jakozbek/Apothecary-Tools/static/js/2.c3a2af56.chunk.js",
+    "static/js/2.c3a2af56.chunk.js.map": "/jakozbek/Apothecary-Tools/static/js/2.c3a2af56.chunk.js.map",
+    "index.html": "/jakozbek/Apothecary-Tools/index.html",
+    "precache-manifest.e04d0054a0a7376c4f3825862d772052.js": "/jakozbek/Apothecary-Tools/precache-manifest.e04d0054a0a7376c4f3825862d772052.js",
+    "service-worker.js": "/jakozbek/Apothecary-Tools/service-worker.js",
+    "static/css/main.14696f0d.chunk.css.map": "/jakozbek/Apothecary-Tools/static/css/main.14696f0d.chunk.css.map",
+    "static/js/2.c3a2af56.chunk.js.LICENSE.txt": "/jakozbek/Apothecary-Tools/static/js/2.c3a2af56.chunk.js.LICENSE.txt",
+    "static/media/abv.png": "/jakozbek/Apothecary-Tools/static/media/abv.4919812a.png",
+    "static/media/apothecary.png": "/jakozbek/Apothecary-Tools/static/media/apothecary.58faa7ce.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f6ac27d.js",
+    "static/js/2.c3a2af56.chunk.js",
+    "static/css/main.14696f0d.chunk.css",
+    "static/js/main.293b821b.chunk.js"
+  ]
+}
