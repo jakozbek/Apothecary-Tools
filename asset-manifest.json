@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Apothecary-Tools/static/css/main.3ed28a69.chunk.css",
-    "main.js": "/Apothecary-Tools/static/js/main.ec3c24c1.chunk.js",
-    "main.js.map": "/Apothecary-Tools/static/js/main.ec3c24c1.chunk.js.map",
+    "main.js": "/Apothecary-Tools/static/js/main.20640238.chunk.js",
+    "main.js.map": "/Apothecary-Tools/static/js/main.20640238.chunk.js.map",
     "runtime-main.js": "/Apothecary-Tools/static/js/runtime-main.9b80e6e7.js",
     "runtime-main.js.map": "/Apothecary-Tools/static/js/runtime-main.9b80e6e7.js.map",
     "static/js/2.c3a2af56.chunk.js": "/Apothecary-Tools/static/js/2.c3a2af56.chunk.js",
     "static/js/2.c3a2af56.chunk.js.map": "/Apothecary-Tools/static/js/2.c3a2af56.chunk.js.map",
     "index.html": "/Apothecary-Tools/index.html",
-    "precache-manifest.103a85a24e875f2090fd3dbf1536be51.js": "/Apothecary-Tools/precache-manifest.103a85a24e875f2090fd3dbf1536be51.js",
+    "precache-manifest.0e7f66416d855faf91a7fa97cf9094f8.js": "/Apothecary-Tools/precache-manifest.0e7f66416d855faf91a7fa97cf9094f8.js",
     "service-worker.js": "/Apothecary-Tools/service-worker.js",
     "static/css/main.3ed28a69.chunk.css.map": "/Apothecary-Tools/static/css/main.3ed28a69.chunk.css.map",
     "static/js/2.c3a2af56.chunk.js.LICENSE.txt": "/Apothecary-Tools/static/js/2.c3a2af56.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.9b80e6e7.js",
     "static/js/2.c3a2af56.chunk.js",
     "static/css/main.3ed28a69.chunk.css",
-    "static/js/main.ec3c24c1.chunk.js"
+    "static/js/main.20640238.chunk.js"
   ]
 }

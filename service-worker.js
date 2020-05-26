@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Apothecary-Tools/precache-manifest.103a85a24e875f2090fd3dbf1536be51.js"
+  "/Apothecary-Tools/precache-manifest.0e7f66416d855faf91a7fa97cf9094f8.js"
 );
 
 self.addEventListener('message', (event) => {

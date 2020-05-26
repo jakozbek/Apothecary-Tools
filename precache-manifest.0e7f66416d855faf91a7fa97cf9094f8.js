@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69a53bfbd7bdd84e228228567c581c2e",
+    "revision": "e801a980ed951833a7e0ca5558c5aa33",
     "url": "/Apothecary-Tools/index.html"
   },
   {
-    "revision": "6af203a1e1a56a1e3667",
+    "revision": "055182564ad4b64258de",
     "url": "/Apothecary-Tools/static/css/main.3ed28a69.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Apothecary-Tools/static/js/2.c3a2af56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6af203a1e1a56a1e3667",
-    "url": "/Apothecary-Tools/static/js/main.ec3c24c1.chunk.js"
+    "revision": "055182564ad4b64258de",
+    "url": "/Apothecary-Tools/static/js/main.20640238.chunk.js"
   },
   {
     "revision": "89f9ab3b35d1681c2c9f",
