@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route , Switch} from 'react-router-dom';
+import DiluteAlcoholCalculator from './components/dilute-alcohol-calc'
+import Home from './components/home';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path='/dilute-alcohol-calculator' component={DiluteAlcoholCalculator} />
+        </Switch>
       </header>
     </div>
   );
