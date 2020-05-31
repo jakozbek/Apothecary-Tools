@@ -11,6 +11,9 @@ function Home() {
           <li>
             <Link to="/dilute-alcohol-calculator">Calculate ABV</Link>
           </li>
+          <li>
+            <Link to="/calculate-apothecary-cost">Calculate Apothecary Cost</Link>
+          </li>
         </ul>
       </nav>
     </div>
