@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
 function CalculateApothecaryCost() {
     let csvFile:File;
     let csvFileContents:string;
+    const [totalCost, setTotalCost] = useState(0);
 
-    // let plantEntry = {
-    //     name:string,
-    //     price,
-    //     ratio,
-    //     bestAbv,
-    //     amntTinctureNeeded
-    // }
+    interface plantEntry {
+        name:string,
+        unitPrice: number,
+        extractRatio: number,
+        extractSolventAbv: number,
+        tinctureVolumeNeeded: number
+    }
 
+    let plantRows:Array<plantEntry>;
+    
     let handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         // check if null
         if (event.target.files![0] )
             csvFile = event.target.files![0];
     }
 
+    // TODO: handle when there is no file
     const handleCsvUpload = () => {
-        console.log(csvFile);
         const fileReader = new FileReader();
+
         fileReader.addEventListener('load', event => {
             console.log(typeof (event.target?.result));
             csvFileContents = event.target!.result as string;
@@ -30,21 +34,54 @@ function CalculateApothecaryCost() {
 
             const parsedArray:Array<any> = parsedCsv.data;
 
-            let plantInfo = parsedArray.map( (row:Array<any>) => {
+            plantRows = parsedArray.map( (row:Array<any>) => {
+                let name:string = row[0];
+                let unitPrice: number;
+                let extractRatio: number;
+
+                unitPrice = Number(row[1].replace('$', ''));
+                extractRatio = Number(row[2])
+
                 return {
-                    "name": row[0],
-                    "unitPrice": row[1],
-                    "extractRatio": row[2],
-                    "extractSolventAbv": row[3],
-                    "tinctureVolumeNeeded": row[3],
-                }
+                    name,
+                    unitPrice,
+                    extractRatio,
+                    extractSolventAbv: row[3],
+                    tinctureVolumeNeeded: row[4],
+                } as plantEntry
             });
 
             // remove the first entry of the array
-            plantInfo.shift();
+            plantRows.shift();
         });
 
         fileReader.readAsText(csvFile);
+    }
+
+    const handleCalculateCost = () => {
+        console.log('handle calculate cost');
+        console.log(plantRows)
+        let totalCost: number = 0;
+
+        plantRows.forEach( row => {
+            let rowCost: number = 0;
+            let herbNeeded:number;
+
+            if (row.extractRatio === 0) {
+                console.error("Enter correct extract ratio");
+                return;
+            }
+
+            herbNeeded = 1/row.extractRatio * row.tinctureVolumeNeeded *8.35;
+            rowCost = herbNeeded * row.unitPrice;
+
+            if (! Number.isNaN(rowCost))
+                totalCost = totalCost + rowCost;
+            else
+                console.error("NaN found, check your rows");
+        });
+        setTotalCost(totalCost);
+        console.log(totalCost)
     }
 
    return (
@@ -52,6 +89,9 @@ function CalculateApothecaryCost() {
         <input type="file" id="input" onChange={handleFileChange} accept=".csv"></input>
 
         <button onClick={handleCsvUpload}>Upload CSV</button>
+        <button onClick={handleCalculateCost}>Calculate Cost</button>
+
+        <p>${totalCost}</p>
        </div>
    ) 
 }
