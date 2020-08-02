@@ -16,3 +16,11 @@
 .App-link {
     color: #61dafb;
 }
+
+a:visited {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
